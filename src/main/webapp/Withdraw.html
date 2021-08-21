@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Withdrawal Page</title>
+<link rel="stylesheet" href="./css/main.css">
+<script type="text/javascript" src="js/WithdrawValidator.js"></script>
+</head>
+<body>
+	<form action="WithdrawAmountServlet" onsubmit="return validate()" method = "post">
+			<div class="container">
+			<h1 class="form__title">Login</h1>
+			<div class="form__input-group">
+				<input type="text" name = "customerid" class="form__input" id="customerid" autofocus
+					placeholder="Customer Id">
+			</div>
+			<div class="form__input-group">
+				<input type="number" name = "amount" class="form__input" id="amount" autofocus
+					placeholder="Amount">
+			</div>
+			<input class="form__button" type="submit" value="Proceed">
+			
+			<p class="form__text">
+				<a class="form__link" href="Welcome.html">Home Page</a>
+			</p>
+			</div>
+		</form>
+</body>
+</html>

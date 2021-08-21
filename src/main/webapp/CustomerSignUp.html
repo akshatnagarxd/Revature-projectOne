@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/main.css">
+<script type="text/javascript" src="js/CustomerSignupValidator.js"></script>
+</head>
+<body>
+		<form action="SignUpServlet" onsubmit="return validate()" method = "post">
+		<div class="container">
+			<h1 class="form__title">Create Account</h1>
+			<div class="form__input-group">
+				<input type="text" id="signupUsername" name = "customerName" class="form__input"
+					id="customerNamee" autofocus placeholder="Customer name">
+			</div>
+
+			<div class="form__input-group">
+				<input type="password" name = "password" class="form__input" id="password" autofocus
+					placeholder="Password">
+			</div>
+			<div class="form__input-group">
+				<input type="password"  class="form__input" id="confirmpassword"
+					autofocus placeholder="Confirm password">
+			</div>
+			<div class="form__input-group">
+				<input type="number" name = "balance" class="form__input" id="balance" autofocus
+					placeholder="Balance">
+			</div>
+			<div class="form__input-group">
+				<input type="number" name = "mobileNumber" class="form__input" id="mobileNumber" autofocus
+					placeholder="Contact number">
+			</div>
+			<div class="form__input-group">
+				<input type="email" name = "emailId" class="form__input" id="emailId" autofocus
+					placeholder="Email address">
+			</div>
+			<input class="form__button" type="submit" value="Continue">
+			<p class="form__text">
+				<a class="form__link" href="CustomerLogin.html">Already have an
+					account? Sign in</a>
+			</p>
+			<p class="form__text">
+				<a class="form__link" href="Welcome.html">Home Page</a>
+			</p>
+		</div>
+	</form>
+</body>
+</html>
